@@ -27,10 +27,27 @@ print("=== Kərpic 5 ===")   # Siyahı (list)
 # TODO: rsrp_list, indeks, len, orta
 
 print("=== Kərpic 6 ===")   # Lüğət (dict)
-# TODO: row = {...}, row["region"]
+row = {"cell_id": "BAK-0207", "region": "Yasamal", "rsrp_dbm": -108.1}
+print(row["region"])
+print(row["rsrp_dbm"])
+print(row)
+row["band"] = "LTE800"
+row["region"]="Nesimi"
+print(row)
 
 print("=== Kərpic 7 ===")   # Dövr (for) və şərt (if / else)
-# TODO: zəif ölçmələri saymaq
+rsrp_list = [-91.5, -108.1, -86.2, -103.3, -110.4]
+for v in rsrp_list:
+    v = v * int(input())
+    print(v)
+
+
+age = int(input())
+
+if  age > 21 :
+    print("yaşım 21dən böyükdür") 
+else :
+    print("yaşım 21dən kiçikdir")
 
 print("=== Kərpic 8 ===")   # Funksiya: çağırmaq və yaratmaq
 # TODO: round, len, max; def is_weak(rsrp)
